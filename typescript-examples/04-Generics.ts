@@ -70,3 +70,19 @@ let x = { a: 1, b: 2, c: 3, d: 4 };
 
 getProperty(x, "a"); // okay
 // getProperty(x, "m"); // error: Argument of type 'm' isn't assignable to 'a' | 'b' | 'c' | 'd'.
+
+// intersection types example
+
+interface X {
+	x: number;
+}
+
+interface Y {
+	y: number;
+}
+
+function printPoint<T extends X & Y>(x: T) {
+	console.log(x);
+}
+
+printPoint({ x: 1, y: 2 });
