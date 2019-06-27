@@ -1,4 +1,6 @@
+//-----------------------------------------------------------------------------
 // basic interface example
+//-----------------------------------------------------------------------------
 
 interface Person {
 	name: string;
@@ -22,7 +24,9 @@ const studentAsPerson: Person = student;
 print(student);
 print(studentAsPerson);
 
+//-----------------------------------------------------------------------------
 // interface with optional example
+//-----------------------------------------------------------------------------
 
 interface Point {
 	x: number;
@@ -70,7 +74,9 @@ function printPoint3(p: AnyPoint) {
 	console.log(p.x, p.y, p.z);
 }
 
+//-----------------------------------------------------------------------------
 // interface with readonly example
+//-----------------------------------------------------------------------------
 
 interface FixedPerson {
 	readonly name: string;
@@ -86,7 +92,9 @@ p6.name = "hello";
 const p7 = new Person6("Morten") as FixedPerson;
 // p6.name = "hello"
 
+//-----------------------------------------------------------------------------
 // interface function type example
+//-----------------------------------------------------------------------------
 
 interface PersonCallback {
 	(p: Person): void;
@@ -98,7 +106,9 @@ const printPerson: PersonCallback = (p: Person) => {
 
 printPerson({ name: "Hello" });
 
+//-----------------------------------------------------------------------------
 // interface to describe objects literals
+//-----------------------------------------------------------------------------
 
 interface IdObject {
 	id: number;

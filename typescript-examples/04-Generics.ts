@@ -1,4 +1,6 @@
+//-----------------------------------------------------------------------------
 // basic generics example
+//-----------------------------------------------------------------------------
 
 function identity1(x: any): any {
 	return x;
@@ -15,7 +17,9 @@ console.log(identity2("Hello"));
 
 identity2({ a: 123 }).a;
 
+//-----------------------------------------------------------------------------
 // generic non compatible types example
+//-----------------------------------------------------------------------------
 
 interface Point {
 	x: number;
@@ -36,7 +40,9 @@ function identity3<T extends StupidType>(x: T): T {
 identity3({ x: 1, y: 2 }).x;
 identity3({ re: 1, im: 2 }).im;
 
+//-----------------------------------------------------------------------------
 // generic extends common props example
+//-----------------------------------------------------------------------------
 
 class IdObject {
 	constructor(public id: number) {}
@@ -61,7 +67,9 @@ const id2 = new OrganisationUnit(321);
 
 printIdObject(id2);
 
+//-----------------------------------------------------------------------------
 // generic keyof example
+//-----------------------------------------------------------------------------
 
 function getProperty<T, K extends keyof T>(obj: T, key: K) {
 	return obj[key];

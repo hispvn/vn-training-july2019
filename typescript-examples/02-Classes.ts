@@ -1,4 +1,6 @@
+//-----------------------------------------------------------------------------
 // class example
+//-----------------------------------------------------------------------------
 
 class Person1 {
 	private _name: string;
@@ -17,7 +19,9 @@ class Person1 {
 const p1 = new Person1("Morten", new Date("1981-03-20"));
 console.log(p1.name);
 
+//-----------------------------------------------------------------------------
 // class example + constructor with var initialization
+//-----------------------------------------------------------------------------
 
 class Person2 {
 	constructor(private name: string, private age: Date) {}
@@ -26,7 +30,9 @@ class Person2 {
 const p2 = new Person2("Morten", new Date("1981-03-20"));
 console.log(p2);
 
+//-----------------------------------------------------------------------------
 // class static method example + default method values
+//-----------------------------------------------------------------------------
 
 class Calculator {
 	/**
@@ -42,7 +48,9 @@ class Calculator {
 
 console.log(Calculator.pow(4));
 
+//-----------------------------------------------------------------------------
 // readonly example
+//-----------------------------------------------------------------------------
 
 class Person3 {
 	public readonly name: string;
@@ -54,7 +62,9 @@ class Person3 {
 const p3 = new Person3("Morten");
 console.log(p3);
 
+//-----------------------------------------------------------------------------
 // getter setter example
+//-----------------------------------------------------------------------------
 
 class Person4 {
 	constructor(private _name: string) {}
@@ -80,7 +90,9 @@ try {
 	console.log(err.message);
 }
 
+//-----------------------------------------------------------------------------
 // abstract + protected vars example
+//-----------------------------------------------------------------------------
 
 abstract class PartialPerson {
 	constructor(protected name: string) {}
