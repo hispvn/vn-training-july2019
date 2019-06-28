@@ -37,3 +37,16 @@ enum Colors2 {
 }
 
 console.log(Colors2);
+
+//-----------------------------------------------------------------------------
+// more types example
+//-----------------------------------------------------------------------------
+
+type MyBoolean = true | false;
+type MyWeirdType = true | 10 | 20 | "ok" | "error";
+
+let myX: MyWeirdType = 20;
+
+type Result = { status: "OK" } | { status: "ERROR" };
+
+let myR: Result = { status: "OK" };
