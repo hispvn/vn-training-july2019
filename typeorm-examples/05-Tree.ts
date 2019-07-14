@@ -1,5 +1,5 @@
 import "reflect-metadata";
-import { createConnection, AdvancedConsoleLogger } from "typeorm";
+import { createConnection } from "typeorm";
 import TreeItem from "./src/entity/TreeItem";
 
 (async () => {
