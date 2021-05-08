@@ -21,6 +21,6 @@
       "reflect-metadata": "^0.1.10",
       "rxjs": "^6.5.2",
       "sqlite3": "^4.0.9",
-      "typeorm": "0.2.18"
+      "typeorm": "0.2.25"
    }
 }
